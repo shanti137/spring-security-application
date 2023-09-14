@@ -16,4 +16,8 @@ public class UserRestController {
     public String getUsers(){
         return "All Users";
     }
+    @GetMapping("/{id}")
+    public String getUser(@PathVariable Long id){
+        return "User with id: " +id;
+    }
 }
